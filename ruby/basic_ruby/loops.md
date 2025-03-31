@@ -87,6 +87,22 @@ end
 
 Much more readable! And who doesn't like Pizza.
 
+### Do/While loop
+
+A `do/while` loop works similarly to a while loop. The difference is that the code inside the loop executes once and then checks if the condition returns true. This loop is used when we want to execute something at least once and then check with a condition if we want to execute the same code again.
+
+```ruby
+loop do 
+  puts "Do yo want to do that again?"
+  answer = gets.chomp
+  if answer != "Y"
+    break
+  end
+end
+```
+
+That's really all there is to it.
+
 ### Ranges
 
 What if we know exactly how many times we want our loop to run? Ruby lets us use something called a [range](https://docs.ruby-lang.org/en/3.3/Range.html) to define an interval. All we need to do is give Ruby the starting value, the ending value, and whether we want the range to be inclusive or exclusive.
